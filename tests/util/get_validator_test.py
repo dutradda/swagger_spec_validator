@@ -6,10 +6,10 @@ from __future__ import unicode_literals
 
 import pytest
 
-from swagger_spec_validator import validator12
-from swagger_spec_validator import validator20
-from swagger_spec_validator.common import SwaggerValidationError
-from swagger_spec_validator.util import get_validator
+from swagger_spec_validator3 import validator12
+from swagger_spec_validator3 import validator20
+from swagger_spec_validator3.common import SwaggerValidationError
+from swagger_spec_validator3.util import get_validator
 
 
 def test_version_missing():

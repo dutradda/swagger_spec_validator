@@ -15,7 +15,7 @@ from jsonschema.compat import iteritems
 from jsonschema.validators import Draft4Validator
 from jsonschema.validators import RefResolver
 
-from swagger_spec_validator import common
+from swagger_spec_validator3 import common
 
 
 log = logging.getLogger(__name__)

@@ -10,8 +10,8 @@ import os
 import mock
 import pytest
 
-from swagger_spec_validator.common import SwaggerValidationError
-from swagger_spec_validator.validator12 import validate_spec_url
+from swagger_spec_validator3.common import SwaggerValidationError
+from swagger_spec_validator3.validator12 import validate_spec_url
 from tests.conftest import is_urlopen_error
 
 RESOURCE_LISTING_FILE = os.path.abspath('tests/data/v1.2/foo/swagger_api.json')
@@ -32,7 +32,7 @@ def test_http_success():
                                           API_DECLARATION_FILE])
 
     with mock.patch(
-        'swagger_spec_validator.validator12.read_url',
+        'swagger_spec_validator3.validator12.read_url',
         side_effect=mock_responses,
     ) as mock_read_url:
         validate_spec_url('http://localhost/api-docs')
@@ -44,7 +44,7 @@ def test_http_success():
 
 
 def test_file_uri_success():
-    mock_string = 'swagger_spec_validator.validator12.validate_api_declaration'
+    mock_string = 'swagger_spec_validator3.validator12.validate_api_declaration'
     with mock.patch(mock_string) as mock_api:
         validate_spec_url('file://{}'.format(RESOURCE_LISTING_FILE))
 

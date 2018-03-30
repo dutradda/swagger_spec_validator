@@ -14,14 +14,14 @@ from pkg_resources import resource_filename
 from six import iteritems
 from six import iterkeys
 
-from swagger_spec_validator import ref_validators
-from swagger_spec_validator.common import read_file
-from swagger_spec_validator.common import read_url
-from swagger_spec_validator.common import SwaggerValidationError
-from swagger_spec_validator.common import wrap_exception
-from swagger_spec_validator.ref_validators import default_handlers
-from swagger_spec_validator.ref_validators import in_scope
-from swagger_spec_validator.ref_validators import validate_schema_value
+from swagger_spec_validator3 import ref_validators
+from swagger_spec_validator3.common import read_file
+from swagger_spec_validator3.common import read_url
+from swagger_spec_validator3.common import SwaggerValidationError
+from swagger_spec_validator3.common import wrap_exception
+from swagger_spec_validator3.ref_validators import default_handlers
+from swagger_spec_validator3.ref_validators import in_scope
+from swagger_spec_validator3.ref_validators import validate_schema_value
 
 
 log = logging.getLogger(__name__)
@@ -115,7 +115,7 @@ def validate_json(spec_dict, schema_path, spec_url='', http_handlers=None):
         validation.
     :rtype: :class:`jsonschema.RefResolver`
     """
-    schema_path = resource_filename('swagger_spec_validator', schema_path)
+    schema_path = resource_filename('swagger_spec_validator3', schema_path)
     schema = read_file(schema_path)
 
     schema_resolver = RefResolver(

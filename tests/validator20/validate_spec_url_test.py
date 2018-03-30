@@ -10,14 +10,14 @@ import os
 import mock
 import pytest
 
-from swagger_spec_validator.common import SwaggerValidationError
-from swagger_spec_validator.validator20 import validate_spec_url
+from swagger_spec_validator3.common import SwaggerValidationError
+from swagger_spec_validator3.validator20 import validate_spec_url
 from tests.conftest import is_urlopen_error
 
 
 def test_success(petstore_contents):
     with mock.patch(
-            'swagger_spec_validator.validator20.read_url',
+            'swagger_spec_validator3.validator20.read_url',
             return_value=json.loads(petstore_contents),
     ) as mock_read_url:
         validate_spec_url('http://localhost/api-docs')

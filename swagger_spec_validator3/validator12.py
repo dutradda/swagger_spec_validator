@@ -22,11 +22,11 @@ from jsonschema import RefResolver
 from pkg_resources import resource_filename
 from six.moves.urllib.parse import urlparse
 
-from swagger_spec_validator.common import read_file
-from swagger_spec_validator.common import read_url
-from swagger_spec_validator.common import SwaggerValidationError
-from swagger_spec_validator.common import wrap_exception
-from swagger_spec_validator.ref_validators import default_handlers
+from swagger_spec_validator3.common import read_file
+from swagger_spec_validator3.common import read_url
+from swagger_spec_validator3.common import SwaggerValidationError
+from swagger_spec_validator3.common import wrap_exception
+from swagger_spec_validator3.ref_validators import default_handlers
 
 log = logging.getLogger(__name__)
 
@@ -255,7 +255,7 @@ def validate_json(json_document, schema_path):
     :param json_document: json document in the form of a list or dict.
     :param schema_path: package relative path of the json schema file.
     """
-    schema_path = resource_filename('swagger_spec_validator', schema_path)
+    schema_path = resource_filename('swagger_spec_validator3', schema_path)
     schema = read_file(schema_path)
 
     resolver = RefResolver(

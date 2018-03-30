@@ -1,7 +1,7 @@
 # swagger_spec_validator
 [![Build Status](https://travis-ci.org/Yelp/swagger_spec_validator.svg?branch=master)](https://travis-ci.org/Yelp/swagger_spec_validator)
-[![Coverage Status](https://coveralls.io/repos/Yelp/swagger_spec_validator/badge.svg)](https://coveralls.io/r/Yelp/swagger_spec_validator)
-[![Latest Version](https://img.shields.io/pypi/v/swagger_spec_validator.svg)](https://pypi.python.org/pypi/swagger_spec_validator/)
+[![Coverage Status](https://coveralls.io/repos/Yelp/swagger_spec_validator3/badge.svg)](https://coveralls.io/r/Yelp/swagger_spec_validator)
+[![Latest Version](https://img.shields.io/pypi/v/swagger_spec_validator.svg)](https://pypi.python.org/pypi/swagger_spec_validator3/)
 
 ## About
 
@@ -13,7 +13,7 @@ Validate a spec from a url:
 
 ```python
 
-from swagger_spec_validator import validate_spec_url
+from swagger_spec_validator3 import validate_spec_url
 
 # example for swagger spec v1.2
 validate_spec_url('http://petstore.swagger.io/api/api-docs')
@@ -32,7 +32,7 @@ More documentation is available at http://swagger_spec_validator.readthedocs.org
 
 ## Contributing
 
-1. Fork it ( http://github.com/Yelp/swagger_spec_validator/fork )
+1. Fork it ( http://github.com/Yelp/swagger_spec_validator3/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

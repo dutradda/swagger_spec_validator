@@ -6,11 +6,11 @@ from __future__ import unicode_literals
 
 import logging
 
-from swagger_spec_validator import validator12
-from swagger_spec_validator import validator20
-from swagger_spec_validator.common import read_url
-from swagger_spec_validator.common import SwaggerValidationError
-from swagger_spec_validator.common import wrap_exception
+from swagger_spec_validator3 import validator12
+from swagger_spec_validator3 import validator20
+from swagger_spec_validator3.common import read_url
+from swagger_spec_validator3.common import SwaggerValidationError
+from swagger_spec_validator3.common import wrap_exception
 
 
 log = logging.getLogger(__name__)

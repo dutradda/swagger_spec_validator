@@ -6,9 +6,9 @@ from __future__ import unicode_literals
 
 import functools
 
-from swagger_spec_validator.validator20 import deref
-from swagger_spec_validator.validator20 import get_collapsed_properties_type_mappings
-from swagger_spec_validator.validator20 import validate_json
+from swagger_spec_validator3.validator20 import deref
+from swagger_spec_validator3.validator20 import get_collapsed_properties_type_mappings
+from swagger_spec_validator3.validator20 import validate_json
 from tests.validator20.conftest import get_spec_json_and_url
 
 

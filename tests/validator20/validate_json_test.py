@@ -9,8 +9,8 @@ import os
 
 import pytest
 
-from swagger_spec_validator.common import SwaggerValidationError
-from swagger_spec_validator.validator20 import validate_json
+from swagger_spec_validator3.common import SwaggerValidationError
+from swagger_spec_validator3.validator20 import validate_json
 
 
 def test_success():

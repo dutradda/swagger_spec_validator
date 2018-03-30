@@ -9,7 +9,7 @@ from jsonschema.exceptions import RefResolutionError
 from jsonschema.validators import RefResolver
 from mock import Mock
 
-from swagger_spec_validator.validator20 import deref
+from swagger_spec_validator3.validator20 import deref
 
 
 def test_none():

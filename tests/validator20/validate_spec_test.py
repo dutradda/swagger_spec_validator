@@ -7,8 +7,8 @@ from __future__ import unicode_literals
 import pytest
 from jsonschema.validators import RefResolver
 
-from swagger_spec_validator.common import SwaggerValidationError
-from swagger_spec_validator.validator20 import validate_spec
+from swagger_spec_validator3.common import SwaggerValidationError
+from swagger_spec_validator3.validator20 import validate_spec
 from tests.validator20.conftest import get_spec_json_and_url
 
 

@@ -12,9 +12,9 @@ import os.path
 import jsonschema.exceptions
 import pytest
 
-from swagger_spec_validator import SwaggerValidationError
-from swagger_spec_validator.validator12 import validate_api_declaration
-from swagger_spec_validator.validator12 import validate_resource_listing
+from swagger_spec_validator3 import SwaggerValidationError
+from swagger_spec_validator3.validator12 import validate_api_declaration
+from swagger_spec_validator3.validator12 import validate_resource_listing
 
 
 def run_json_tests_with_func(json_test_paths, func):

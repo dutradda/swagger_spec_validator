@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 
 import pytest
 
-from swagger_spec_validator.validator12 import get_resource_path
+from swagger_spec_validator3.validator12 import get_resource_path
 
 
 def test_fetch_from_file_uri_success():

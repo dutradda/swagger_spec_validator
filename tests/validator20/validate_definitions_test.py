@@ -6,8 +6,8 @@ from __future__ import unicode_literals
 
 import pytest
 
-from swagger_spec_validator.common import SwaggerValidationError
-from swagger_spec_validator.validator20 import validate_definitions
+from swagger_spec_validator3.common import SwaggerValidationError
+from swagger_spec_validator3.validator20 import validate_definitions
 
 
 @pytest.mark.parametrize(
